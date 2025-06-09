@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Nosso Amor 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="foto.jpg" alt="Nós dois">
+  <div id="counter"></div>
+  <p>“Você é meu momento mais lindo, um sonho acordado, você é uma flor que eu colhi.<br>
+  A verdade é que você continua sendo a melhor parte do meu dia, e seu sorriso continua sendo minha alegria.<br>
+  E para completar, meu coração diz que, ao meu lado é o seu lugar.”</p>
+
+  <audio autoplay loop>
+    <source src="musica.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <script>
+    const start = new Date(2021, 0, 6);
+    function update() {
+      const now = new Date();
+      const diff = now - start;
+      const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const anos = Math.floor(dias / 365);
+      const meses = Math.floor((dias % 365) / 30);
+      document.getElementById("counter").innerText =
+        `${anos} ano(s), ${meses} mês(es) e ${dias} dia(s) juntos 💞`;
+    }
+    update();
+    setInterval(update, 1000 * 60 * 60 * 24);
+  </script>
+</body>
+</html>

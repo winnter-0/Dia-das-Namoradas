@@ -1,0 +1,4 @@
+body { text-align: center; font-family: sans-serif; padding: 30px; background: #fffafc; }
+img { max-width: 90%; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.2); }
+#counter { margin: 20px 0; font-size: 1.3em; color: #cc3366; }
+p { font-size: 1.1em; color: #444; }
